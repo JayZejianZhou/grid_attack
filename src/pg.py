@@ -15,6 +15,8 @@ class PolicyNet(nn.Module):
     def __init__(self):
         super(PolicyNet, self).__init__()
 
+        a = 0
+
         self.fc1 = nn.Linear(4, 24)
         self.fc2 = nn.Linear(24, 36)
         self.fc3 = nn.Linear(36, 1)  # Prob of Left
